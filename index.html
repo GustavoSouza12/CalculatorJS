@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Calculator JS</title>
+    </head>
+    <body>
+        <main>
+            <form name="form">
+
+                <input  name="textview">
+            </form>    
+                <table>
+                    <tr> 
+                        <td><input type="button" class="calcButton" value="C" onclick="clean()"></td>
+                        <td><input type="button" class="calcButton" value="back" onclick="backOneNumber()"></td>
+                        <td><input type="button" class="calcButton" value="/" onclick="setContent('/')"></td>
+                        <td><input type="button" class="calcButton" value="x" onclick="setContent('*')"></td>
+                    </tr>
+                    <tr> 
+                        <td><input type="button" class="calcButton" value="7" onclick="setContent(7)"></td>
+                        <td><input type="button" class="calcButton" value="8" onclick="setContent(8)"></td>
+                        <td><input type="button" class="calcButton" value="9" onclick="setContent(9)"></td>
+                        <td><input type="button" class="calcButton" value="-" onclick="setContent('-')"></td>
+                    </tr>
+                    <tr> 
+                        <td><input type="button" class="calcButton" value="4" onclick="setContent(4)"></td>
+                        <td><input type="button" class="calcButton" value="5" onclick="setContent(5)"></td>
+                        <td><input type="button" class="calcButton" value="6" onclick="setContent(6)"></td>
+                        <td><input type="button" class="calcButton" value="+" onclick="setContent('+')"></td>
+                    </tr>
+                    <tr> 
+                        <td><input type="button" class="calcButton" value="1" onclick="setContent(1)"></td>
+                        <td><input type="button" class="calcButton" value="2" onclick="setContent(2)"></td>
+                        <td><input type="button" class="calcButton" value="3" onclick="setContent(3)"></td>
+                        <td rowspan="5"><input type="button" style="height: 100px" class="calcButton" value="=" onclick="equal()"></td>
+                    </tr>
+                    <tr> 
+                        <td ><input type="button"  class="calcButton" value="0" onclick="setContent(0)"></td>
+                        <td><input type="button" class="calcButton" value="." onclick="setContent('.')"></td>
+                        <td><input type="button" class="calcButton" style="background-color: rgb(230, 198, 93); font-weight: 700;" value="JS" ></td>
+                    
+                        
+                    </tr>
+            
+                </table>
+           
+            <h3>Made by <a href="https://www.instagram.com/gstdev1/" >Gustavo</a></h3>
+
+
+        </main>
+
+
+
+        <script src="app.js"></script>
+    </body>
+
+
+
+</html>

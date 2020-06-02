@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+main{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    background:linear-gradient(rgb(61, 59, 59), rgb(0, 0, 0));
+    border-radius: 10%;
+    width: 450px;
+    padding : 20px;
+}
+body{
+    background: url("img/background.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  body * {
+    z-index: 1;
+  }
+   
+input{
+    width: 450px;
+   
+    height: 5vh;
+    font-size: 30px;
+    
+    text-align: center;
+
+
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transform: skewx(-24deg);
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(236, 199, 95)
+}
+
+h3{
+    position: absolute;
+    right: 0px;
+    top: 45%;
+    margin: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+  
+}
+h3::after{
+    position: absolute;
+    content:'';
+    top: 120%;
+    right: 19%;
+    width: 60%;
+    height: 2px;
+    background-color: rgb(230, 155, 70);
+
+    
+}
+.calcButton{
+    width: 52px;
+    height: 44px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(238, 238, 230);
+    transition: 0.5s;
+    margin:  8px;
+    
+    cursor: pointer;
+}
+.calcButton:hover{
+    transform: scale(1.1);
+    
+    
+    border: rgb(228, 188, 101) 3px solid;
+}
+
